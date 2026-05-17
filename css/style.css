@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #dddddd;
+  font-family: "Bitcount Single", system-ui, sans-serif;
+}
+
+.container {
+  width: 95%;
+  margin: 40px auto;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.grid {
+  display: grid;
+  gap: 14px;
+
+  /* MOBILE FIRST */
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+  height: 90px;
+  border-radius: 8px;
+
+  display: grid;
+  place-items: center;
+
+
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: white;
+
+  text-align: center;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+/* COLORS */
+
+.colors {
+  background-color: black;
+  grid-column: 1 / -1;
+  height: 120px;
+}
+
+.black {
+  background-color: black;
+}
+
+.teal {
+  background-color: teal;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.navy {
+  background-color: navy;
+}
+
+.lime {
+  background-color: lime;
+}
+
+.white {
+  background-color: whitesmoke;
+  color: black;
+  border: 1px solid #cfcfcf;
+}
+
+.purple {
+  background-color: purple;
+}
+
+.yellow {
+  background-color: yellow;
+  color: white;
+}
+
+.olive {
+  background-color: olive;
+}
+
+.red {
+  background-color: red;
+}
+
+.maroon {
+  background-color: maroon;
+}
+
+.gray {
+  background-color: gray;
+}
+
+.olivedrab {
+  background-color: olivedrab;
+}
+
+.deepskyblue {
+  background-color: deepskyblue;
+}
+
+.fuchsia {
+  background-color: fuchsia;
+}
+
+.green {
+  background-color: green;
+  grid-column: 1 / -1;
+}
+
+/* ========================= */
+/* TABLET */
+/* ========================= */
+
+@media (min-width: 768px) {
+
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .green {
+    grid-column: auto;
+  }
+}
+
+/* ========================= */
+/* DESKTOP */
+/* ========================= */
+
+@media (min-width: 1024px) {
+
+  .grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .green {
+    grid-column: span 3;
+  }
+}
